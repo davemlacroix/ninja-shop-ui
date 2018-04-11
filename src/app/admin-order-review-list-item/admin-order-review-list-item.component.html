@@ -1,0 +1,28 @@
+<div class="card mb-4 box-shadow">
+  <div class="card-header">
+    <h4 class="my-0 font-weight-normal">${{order?.total}} - {{customer?.firstName}} {{customer?.lastName}}</h4>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title pricing-card-title">
+    </h5>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>name: {{customer?.firstName}} {{customer?.lastName}}</li>
+          <li>location: {{customer?.address}}, {{customer?.state}}</li>
+          <li>email: {{customer?.email}}</li>
+          <li>customer id: {{customer?.id}}</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ng-container *ngFor="let product of selectedProducts">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>{{product.product.productName}}</li>
+            <li>${{product.product.price}}</li>
+            <li>Count: {{product.count}}</li>
+          </ul>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

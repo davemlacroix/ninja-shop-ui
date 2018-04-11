@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
+import { AppDispatcher } from './app.dispatcher';
 
 @Component({
-  selector: 'app-root',
+  selector: 'nja-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [AppDispatcher]
 })
-export class AppComponent {
-  title = 'app';
-}
+export class AppComponent {}

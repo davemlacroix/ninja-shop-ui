@@ -1,0 +1,20 @@
+<div class="card mb-4 box-shadow sticky-top">
+  <div class="card-header">
+    <h4 class="my-0 font-weight-normal">Order Summary</h4>
+  </div>
+  <div class="card-body">
+
+    <ng-container *ngFor="let selectedProduct of selectedProducts">
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>{{selectedProduct.product.productName}}</li>
+        <li>${{selectedProduct.product.price}} &times; {{selectedProduct.count}} = ${{selectedProduct.product.price * selectedProduct.count}}</li>
+      </ul>
+    </ng-container>
+
+    <ul class="list-unstyled mt-3 mb-4">
+      <li>Total Items: {{totalItems}}</li>
+    </ul>
+
+    <button type="button" class="btn btn-lg btn-block btn-outline-primary" (click)="checkout.emit()">Checkout ${{subTotal}}</button>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="row">
+  <ng-container *ngIf="!showCheckoutForm && !orderComplete">
+    <div class="col-md-8">
+      <nja-product-list></nja-product-list>
+    </div>
+    <div class="col-md-4">
+      <nja-product-selection-review (checkout)="checkOutClicked()"></nja-product-selection-review>
+    </div>
+  </ng-container>
+  <div class="col-md-12" *ngIf="showCheckoutForm">
+    <nja-check-out-form (orderSubmitted)="orderSubmitted()"></nja-check-out-form>
+  </div>
+  <div class="col-md-12" *ngIf="orderComplete">
+    <nja-order-complete></nja-order-complete>
+  </div>
+</div>
