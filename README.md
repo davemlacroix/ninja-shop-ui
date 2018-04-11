@@ -4,6 +4,12 @@ Ninja Shop UI is an Angular based UI which will allow you to add ninja weapons t
 
 Be sure to have the accompanying [ninja-shop-api](https://github.com/elAndyG/ninja-shop-api) running to truly demonstrate a full vertial slice. 
 
+## Prerequisites
+you must have node and angular cli installed
+optional - yarn
+optional - vscode
+optional - git scm, to clone
+
 ## Getting Started
 * download or clone the git repositoory
 * If you have yarn, head to command line and just type `yarn`
