@@ -19,7 +19,6 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "nja",
       "styles": [
-        "../node_modules/bootstrap/scss/bootstrap.scss",
         "styles.scss"
       ],
       "scripts": [],
