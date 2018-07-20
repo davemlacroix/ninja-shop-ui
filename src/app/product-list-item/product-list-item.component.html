@@ -3,16 +3,18 @@
     <h4 class="my-0 font-weight-normal">{{product.productName}}</h4>
   </div>
   <div class="card-body">
-    <h1 class="card-title pricing-card-title">${{product.price}}
-      <small class="text-muted">/each</small>
-    </h1>
-    <img src="{{product.imageUrl}}">
-    <ul class="list-unstyled mt-3 mb-4">
-      <li>{{product.description}}</li>
-      <li></li>
-      <li></li>
-      <li>Hit Points: {{product.hitPoints}}</li>
-    </ul>
+    <div style="height: 300px">
+      <h1 class="card-title pricing-card-title">${{product.price}}
+        <small class="text-muted">/each</small>
+      </h1>
+      <img src="{{product.imageUrl}}">
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>{{product.description}}</li>
+        <li></li>
+        <li></li>
+        <li>Hit Points: {{product.hitPoints}}</li>
+      </ul>
+    </div>
     <button (click)="addItem()" type="button" class="btn btn-lg btn-block btn-outline-primary">Add ({{count}})</button>
     <button (click)="removeItem()" type="button" class="btn btn-lg btn-block btn-outline-primary">Remove</button>
   </div>
