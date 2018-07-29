@@ -1,11 +1,11 @@
 <table>
     <ng-template ngFor let-product [ngForOf]="products" let-i="index" let-isEven="even">
         <tr *ngIf="isEven">
-            <td height="100%">
+            <td>
                 <nja-product-list-item  [product]="products[i]">
                 </nja-product-list-item>
             </td>
-            <td height="100%"> 
+            <td> 
                 <nja-product-list-item  [product]="products[i+1]">
                 </nja-product-list-item>
             </td>

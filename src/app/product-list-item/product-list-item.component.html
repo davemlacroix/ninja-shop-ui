@@ -2,8 +2,7 @@
   <div class="card-header">
     <h4 class="my-0 font-weight-normal">{{product.productName}}</h4>
   </div>
-  <div class="card-body">
-    <div style="height: 300px">
+  <div class="card-body" style="height: 550px">
       <h1 class="card-title pricing-card-title">${{product.price}}
         <small class="text-muted">/each</small>
       </h1>
@@ -17,5 +16,4 @@
     </div>
     <button (click)="addItem()" type="button" class="btn btn-lg btn-block btn-outline-primary">Add ({{count}})</button>
     <button (click)="removeItem()" type="button" class="btn btn-lg btn-block btn-outline-primary">Remove</button>
-  </div>
 </div>
